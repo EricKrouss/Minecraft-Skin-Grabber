@@ -6,13 +6,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Add a click event listener to the button
     searchButton.addEventListener('click',function() {
-        var username = searchBar.value.trim();
-        var userURL = `https://api.ashcon.app/mojang/v2/user/${username}`;
-        
-        //clears previous rsults
+         //clears previous rsults
         let results = document.getElementById('results');
         document.getElementById('skin').src = '';
         document.getElementById('cape').src = '';
+        var username = searchBar.value.trim();
+        var userURL = `https://api.ashcon.app/mojang/v2/user/${username}`;
+        
+       
 
 
 
@@ -23,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function(){
                         if(response.status === 404 || response.status === 400 ) {
                             results.innerText = "Username not found";
                             results.style.color = "red";
-                            document.getElementById('skin').style.display = 'none';
-                            document.getElementById('cape').style.display = 'none';
+                            document.getElementById('skin').src = '';
+                            document.getElementById('cape').src = '';
                         }
                         return null;
                 }
