@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Get the Search Button and Search Bar elements by their IDs
     var searchButton = document.getElementById('search-button');
-    var searchBar = document.getElementById('search-bar');
+    var searchBar = document.getElementById('search-bar'); 
 
     // Add a click event listener to the button
     searchButton.addEventListener('click',function() {
