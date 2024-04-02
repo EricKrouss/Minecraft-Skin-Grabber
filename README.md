@@ -9,7 +9,7 @@ The Minecraft-Skin-Grabber tool utilizes Mojang's servers to fetch the latest sk
 ## Credits
 
 The credits for Minecraft-Skin-Grabber go to Electroid for their simplified version of Mojang's API.
-Visit his GitHub project for more information: https://github.com/Electroid/mojang-api?tab=readme-ov-file
+Visit their GitHub project for more information: https://github.com/Electroid/mojang-api?tab=readme-ov-file
 
 
 Please note that Minecraft-Skin-Grabber is an independent project and is not affiliated with Mojang or Minecraft in any way.
