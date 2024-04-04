@@ -18,7 +18,10 @@ export function fetchUserProfile(username) {
 
             var skinImg = document.getElementById("skin");
             skinImg.src = data.textures.skin.url;
+            if (data=="null"){
+                results.innerText = "";
 
+            }
             if (data.textures.cape) {
                 var capeImg = document.getElementById("cape");
                 capeImg.src = data.textures.cape.url;

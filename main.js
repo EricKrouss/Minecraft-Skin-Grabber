@@ -1,7 +1,5 @@
     import { clearPreviousResults } from "./clearResults.js";
-    import { fetchUserProfile } from "./fetchProfile.js";
     import { retrieveUserProfile } from "./retrieveUsername.js";
-
     export function getMinecraftProfile() {
         document.addEventListener("DOMContentLoaded", function () {
             var searchButton = document.getElementById("search-button");
@@ -9,8 +7,6 @@
             var results = document.getElementById("results");
 
             clearPreviousResults();
-            fetchUserProfile();
-            retrieveUserProfile();
             
             searchButton.addEventListener("click", retrieveUserProfile);
             searchBar.addEventListener("keyup", function (event) {
