@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Skin Grabber</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    <script type="module">
+        import { getMinecraftProfile } from './main.js';
+        getMinecraftProfile();
+    </script>
 </head>
 <div class="topbar">
 <div class="topbarbg">
